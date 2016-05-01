@@ -72,11 +72,26 @@
 
 // myModule(pathToDir, extname, readdirCallback);
 
-var http = require('http');
-var url  = process.argv[2];
+// task 7
+// var http = require('http');
+// var url  = process.argv[2];
 
-http.get(url, function(response) {
-  response.setEncoding('utf8')
-  response.on('data', console.log)
-  response.on('error', console.error)
-});
+// http.get(url, function(response) {
+//   response.setEncoding('utf8')
+//   response.on('data', console.log)
+//   response.on('error', console.error)
+// });
+
+// task 8
+// var concatStream = require("concat-stream");
+// var http = require('http');
+// var url  = process.argv[2];
+
+// http.get(url, function(response) {
+//   response.setEncoding('utf8')
+//   response.on('error', console.error)
+//   response.pipe(concatStream(function (data) {
+//     console.log(data.length);
+//     console.log(data);
+//   }))
+// });
