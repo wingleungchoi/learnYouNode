@@ -50,3 +50,24 @@
 // };
 
 // filesWithExtname(pathToDir,extname);
+
+
+// task 6
+// var path       = require ('path');
+// var pathToDir  = process.argv[2];
+// var extname    = process.argv[3];
+// var myModule   = require('./myModule.js');
+
+// function readdirCallback (err, fileNames) {
+//   if (err) {
+//     throw err;
+//   } else{
+//     for (i = 0; i < fileNames.length; i++) {
+//       if (path.extname(fileNames[i]) === ('.' + extname)) {
+//         console.log(fileNames[i]);
+//       };
+//     };
+//   };
+// };
+
+// myModule(pathToDir, extname, readdirCallback);
