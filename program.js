@@ -95,3 +95,41 @@
 //     console.log(data);
 //   }))
 // });
+
+
+
+// task 9
+// var concatStream = require("concat-stream");
+// var http         = require('http');
+// var url_1        = process.argv[2];
+// var url_2        = process.argv[3];
+// var url_3        = process.argv[4];
+// var result       = [];
+// var successCount = 0;
+
+// function printResultMessage(){
+//   for (var i = 0; i < 3; i++) {
+//     var message = result[i];
+//     console.log(message);
+//   }  
+// }
+
+// function getHttpContent(url, index){
+//   http.get(url, function(response) {
+//     response.setEncoding('utf8', getHttpContent);
+//     response.on('error', console.error)
+//     response.pipe(concatStream(function (data) {
+//       console.log(index);
+//       console.log(data);
+//       result[index] = data;
+//       successCount++;
+//       if (successCount === 3) {
+//         printResultMessage()
+//       };
+//     }));
+//   });
+// };
+// var urls = [url_1, url_2, url_3]
+// for (var i = 0; i < 3; i++) {
+//   getHttpContent(urls[i], i);
+// };
