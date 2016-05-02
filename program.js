@@ -133,3 +133,15 @@
 // for (var i = 0; i < 3; i++) {
 //   getHttpContent(urls[i], i);
 // };
+
+// task 10
+// var portNumber = process.argv[2];
+// var net        = require('net')
+// var server     = net.createServer(function (socket) {
+//   "YYYY-MM-DD hh:mm"
+//   date = new Date();
+//   data = date.getFullYear() + "-" + ("0" +(date.getMonth() + 1)).slice(-2) + "-" + ("0" + date.getDate()).slice(-2) + " " + ("0" + date.getHours()).slice(-2) + ":" + ( "0" + date.getMinutes()).slice(-2) + "\n"
+//   socket.write(data);
+//   socket.end();
+// })
+// server.listen(portNumber);
